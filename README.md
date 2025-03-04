@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Question Management Web
 
-## Getting Started
+## Description
+**Question Management Web** is a web-based platform designed to manage and organize questions efficiently. This application allows users to create, categorize, and track questions, making it useful for educational institutions, online quizzes, and knowledge management.
 
-First, run the development server:
+## Features
+- **Question Creation**: Add and edit questions with different formats (MCQs, True/False, Descriptive, etc.).
+- **Category & Tagging**: Organize questions by categories and tags for easy retrieval.
+- **User Management**: Role-based access control for admins and contributors.
+- **Search & Filter**: Quickly find questions based on keywords, categories, or difficulty levels.
+- **Question Bank**: Store and retrieve questions for assessments or practice tests.
+- **Analytics & Reports**: Track question usage and user interactions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
+### Prerequisites
+- Node.js 16+
+- MongoDB (Self-hosted or MongoDB Atlas)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/amitavrchy/question-management-web.git
+   cd question-management-web
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Set up environment variables:
+   - Copy `.env.example` to `.env`
+   - Configure MongoDB connection and other required settings
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
+- **Admins**: Manage users, create categories, and oversee question organization.
+- **Contributors**: Add and edit questions within assigned categories.
+- **Users**: Search and access questions for learning or assessment purposes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
+- **Next.js** – Framework for frontend and server-side rendering.
+- **MongoDB** – NoSQL database for scalable question storage.
+- **Tailwind CSS** – Styling for a clean and modern UI.
+- **NextAuth** – Authentication system without Mongoose.
 
-## Learn More
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`feature-xyz`).
+3. Commit and push your changes.
+4. Create a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Support
+For issues and feature requests, please open an issue in this repository.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+**Developed by:** Amitav Roy Chowdhury, Mahadi Zulfiker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
